@@ -35,3 +35,4 @@ logs/
 .ipynb_checkpoints/
 
 *.jsonl
+*.sh
