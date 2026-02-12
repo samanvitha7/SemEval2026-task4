@@ -1,0 +1,25 @@
+seed: 42
+
+device: cuda
+
+model:
+  name: microsoft/deberta-v3-base
+  max_len: 192
+  freeze_layers: 4
+
+training:
+  batch_size: 8
+  epochs: 15
+  lr: 0.000015
+  weight_decay: 0.02
+  warmup_ratio: 0.1
+  num_folds: 5
+  margin: 0.4
+  temperature: 0.05
+  patience: 3
+  min_delta: 0.001
+
+paths:
+  train_data: data/new_train.jsonl
+  dev_data: data/pseudo_test.jsonl
+  save_dir: checkpoints

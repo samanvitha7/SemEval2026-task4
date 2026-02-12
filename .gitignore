@@ -1,0 +1,37 @@
+# Checkpoints
+checkpoints/*.pt
+hf_export/
+*.pt
+*.bin
+*.h5
+*.ckpt
+*.pkl
+*.npz
+*.npy
+
+# Data and outputs
+data/
+output*.jsonl
+submission*.jsonl
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Logs
+*.log
+logs/
+
+# Hugging Face cache
+~/.cache/huggingface/
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+*.jsonl
