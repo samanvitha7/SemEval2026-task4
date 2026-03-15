@@ -24,7 +24,7 @@ def load_jsonl(path):
                 data.append(json.loads(line))
     return data
 
-train_data = load_jsonl("/content/synthetic_data_for_classification (3).jsonl")
+train_data = load_jsonl(r"C:\Users\Lenovo\Desktop\semEval assests\synthetic_data_for_classification (4).jsonl")
 print("Train samples:", len(train_data))
 
 def clean_text_list(texts):
@@ -122,7 +122,8 @@ print("combined model trained")
 
 #testing on dev data
 
-dev_data = load_jsonl("/content/dev_track_a.jsonl")
+dev_data = load_jsonl(r"C:\Users\Lenovo\Desktop\semEval assests\dev_track_a.jsonl")
+print("Dev samples:", len(dev_data))
 
 #extract dev texts
 dev_anchor = [d["anchor_text"] for d in dev_data]

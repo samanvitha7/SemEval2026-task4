@@ -1,0 +1,17 @@
+model:
+  name_or_path: intfloat/e5-large-v2
+
+training:
+  batch_size: 8
+  epochs: 4
+  learning_rate: 1.0e-5
+  triplet_margin: 0.35
+
+inference:
+  batch_size: 32
+
+paths:
+  train_file: bge_large/data/final_train.jsonl
+  dev_file: bge_large/data/dev.jsonl
+  checkpoint_dir: bge_large/e5_large/checkpoints
+  output_dir: bge_large/e5_large/outputs
